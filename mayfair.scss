@@ -1,0 +1,37 @@
+@import "bourbon";
+
+.row {
+  margin: 40px;
+ 
+  overflow: hidden; // For clipping
+}
+
+.parallelogram {
+  $plgm-height: 215px; // From design
+  $slant-width: 109px; // Figured out with trigonometry
+  $slant-height: 250px; // Figured out with trigonometry
+  
+  position: relative;
+  width: 305px; // Usually would be a % based on grid
+  height: $plgm-height;
+  margin: 0 auto;
+  background: blue;
+  
+  &:before, &:after {
+    @include transform(rotate(-30deg));
+    width: $slant-width;
+    height: $slant-height;
+    background: blue;
+    content: '';
+  }
+  
+  &:before {
+    @include position(absolute, null null 0 0);
+    @include transform-origin(left bottom);
+  }
+  
+  &:after {
+    @include position(absolute, 0 0 null null);
+    @include transform-origin(right top);
+  }
+}

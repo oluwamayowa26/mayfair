@@ -1,0 +1,214 @@
+.banner { padding-left: 35rem;
+}
+
+.leftbox{
+    height:450px;
+    background-color: #F1F1E5;
+    width:100%;
+  }
+  .rightbox{
+    height:420px;
+    background-color: yellow;
+    width:100%;
+  }
+  
+  has-overlay::after {
+      content: "";
+      display: block;
+      position: fixed;
+      padding: 100px 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(black, 0.5);
+  }
+  .box{
+    border: 1px solid yellow;
+    width: 45px;
+    height: 55px;
+
+  }
+  .planning{
+    padding-bottom: 90px;
+   padding-left:60px;
+  
+  }
+  #overlay {
+    position: absolute; /* Sit on top of the page content */
+     /* Hidden by default */
+   /*  width: 100%; Full width (cover the whole page) */
+   /*  height: 100%; Full height (cover the whole page) */
+    top: 45px; 
+    left: 30%;
+    bottom: 100px;}
+
+    #container{
+      margin: 0 auto;
+      width:600px;
+      padding-top:50px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      padding: 5px;
+    }
+    
+    h2 {
+      text-align:center;
+      padding-bottom: 1em;
+    }
+    
+    .slick-dots {
+      text-align: center;
+      margin: 0 0 10px 0;
+      padding: 0;
+      li {
+        display:inline-block;
+        margin-left: 4px;
+        margin-right: 4px;
+        &.slick-active {
+          button {
+            background-color:black;
+          }
+        }
+        button {
+          font: 0/0 a;
+          text-shadow: none;
+          color: transparent;
+          background-color:#999;
+          border:none;
+          width: 15px;
+          height: 15px;
+          border-radius:50%;
+        }
+        :hover{
+          background-color: black;
+        }
+      }
+    }
+    
+    /* Custom Arrow */
+    .prev{
+      color: #999;
+      position: absolute;
+      top: 38%;
+      left: -2em;
+      font-size: 1.5em;
+        :hover{
+          cursor: pointer;
+          color: black;
+        }
+    }
+    .next{
+      color: #999;
+      position: absolute;
+      top: 38%;
+      right: -2em;
+      font-size: 1.5em;
+      :hover{
+          cursor: pointer;
+          color: black;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .next {
+            display: none !important;
+        }
+    }
+    
+    
+    
+    .one{
+      
+      width:300px;
+     height: 200px;
+      margin-top: 0px
+     
+    }
+
+    .two{
+      width:300px;
+      height:200x;
+      margin-top: 20px;
+      
+      
+    }
+    #box-container{
+      display:flex;
+      justify-content: center;
+      margin-top: 20px;
+      
+      
+    }
+
+    #carousel2{
+      display: flex;
+      float:right;
+     
+    }
+
+    
+    .project{
+      background-color: #FFFBF2;
+      margin-top: 30px;
+    }
+    .btn{color: black;
+      outline-color: yellow;
+     align-content: center;
+
+    }
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+   
+  
+    }
+
+   /* background-image: url() ;  Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+  .bed{
+     position: left;
+     margin-top: 100px;
+  }
+.h3-span{color:blue;
+
+}
+/* parralelogram */
+
+.parallelogram {
+  $plgm-height: 215px; // From design
+  $slant-width: 109px; // Figured out with trigonometry
+  $slant-height: 250px; // Figured out with trigonometry
+  
+  position: relative;
+  width: 305px; // Usually would be a % based on grid
+  height: $plgm-height;
+  margin: 0 auto;
+  background: blue;
+  
+  &:before, &:after {
+    @include transform(rotate(-30deg));
+    width: $slant-width;
+    height: $slant-height;
+    background: blue;
+    content: '';
+  }
+  
+  &:before {
+    @include position(absolute, null null 0 0);
+    @include transform-origin(left bottom);
+  }
+  
+  &:after {
+    @include position(absolute, 0 0 null null);
+    @include transform-origin(right top);
+  }
+
