@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
 <link rel="stylesheet" 
-href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-crossorigin="anonymous">
+href="./assets/bootstrap.min.css"  >
  <!--  CSS -->
  <link rel="stylesheet" href="mayfair.css">
  <!--SCSS -->
@@ -30,7 +28,7 @@ crossorigin="anonymous">
               <div class="col-md-8 rightbox">
                 <nav class="navbar test navbar-expand-md navbar-light  sticky-to" >
                   <div class="container-fluid">
-                     <a class="navbar-brand" href="#"><img src="assets/fashion.png"> </a>
+                     <a class="navbar-brand" href="#"><img src="assets/fashion.png" class="img-class"> </a>
                      <button class="navbar-toggler" type="button" data-toggle="collapse" 
                      data-target="#navbarResponsive">
                      <span class="navbar-toggler-icon" ></span>
@@ -65,26 +63,51 @@ crossorigin="anonymous">
             </div>
                 </section>
               <div id="overlay">
-                <img src="assets/may fair 1.jpg">
+                <img src="assets/may fair 1.jpg" class="img-class">
                 </div>
 
                   <div class="row">
                 <div class=" row bed"style="margin-top:30px;">
-                    <img src="assets/may fair 1.jpg">
-                  </div>
-                        <div class="col-md-4 leftbox" style="margin-top:45px; padding-left:50px;">
-                          <h4>We've been Designing For almost <span style="color: blue;">special-color</span></h4>
-                          <p> One side question for you Jeff. I wasn't able to wrap the h1 and span colors in the style
-                             tag as you showed, when I tried it didn't work. What was the purpose in that and do you think 
-                             it will effect anything later?</p>
-                            </div>
-                             <div class="box">
-                             <img src="assets/noun_plan_2064938.svg" style="width: 40px; padding-top: 20px;">
+                  <!-- <img style= "height:350px;" width="290px" class="bed img-class" src='assets/M.jpg'> -->
 
-                              </div>                                                                                                                                                           
+                  <div class="slider slider-single-image">
+                      <div>
+                          <img style= "height:350px;" width="290px" class="bed img-class" src='assets/M.jpg'>
+                      </div>
+                      <div>
+                          <img style= "height:350px;" width="290px" class="bed img-class" src='assets/pf-71.jpg'>
+                      </div>
+                      <div>
+                          <img style= "height:350px;" width="290px" class="bed img-class" src='assets/pf-9.jpg'>
+                      </div>
+                  </div>                    
                     </div>
-                      
-                                     <!-- PROJECT-->   
+                     <div class="col-md-4 leftbox" style="margin-top:45px; padding-left:50px;">
+                        <h4>We've been Designing For almost <span style="color: blue;">special-color</span></h4>
+                        <p> One side question for you Jeff. I wasn't able to wrap the h1 and span colors in the style
+                           tag as you showed, when I tried it didn't work. What was the purpose in that and do you think 
+                           it will effect anything later?</p>
+                           
+                           <div class="row">
+                            <div class="col-md-6 clear-fix"><img  src="assets/noun_plan_2064938.svg" class="pull-left float-left mr-2"/> 
+                           Planning</div>
+                            <div class="col-md-6"><img  src="assets/noun_plan_2064938.svg" class="float-left"style="margin-top:8px;">
+                          Interior Design
+                            </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6"><img src="assets/noun_plan_2064938.svg" class="float-left"/>
+                              Exterior Design</div>
+                              <div class="col-md-6"><img src="assets/noun_plan_2064938.svg" class="float-left"style="margin-top:8px;">
+                             Architectural Design
+                              </div>
+                             </div>
+                              
+                                
+                          </div>                                                                                                                                                               
+                  </div>
+                  </div>
+                            <!-- PROJECT-->   
                                             
                                        <div class="project">
                                           <div class="container-fluid padding">
@@ -94,12 +117,12 @@ crossorigin="anonymous">
                                                       <h2 class="display-4"  style="font-size: 40PX; color: black;
                                                        font-weight: 500; padding-top:20px;"> POPULAR PRODUCTS</h2>
                                           <div id="box-container">
-                                      <div class="one">
-                                        <img src="assets/popular1.jpg">
+                                      <div class=" column one">
+                                        <img style="height:250px; width:200px; padding-bottom: 50px;" src= "assets/pf-9.jpg">
                                        </div>
                                         
-                                      <div class="two">
-                                        <img src="assets/populae3.jpg">
+                                      <div class="column two">
+                                        <img style="height:200px; width:200px;"src="assets/pf-71.jpg">
                                      </div>
                                     </div>
                                   </div>
@@ -114,14 +137,64 @@ crossorigin="anonymous">
                               style="margin-top: 10px; justify-content:center;"  >SHOP NOW</button>-->   
                             
                         <!-- PROCESS-->  
-                        <div class="process">
-                          <img src="assets/mag 4.png">
+                        <div class="middle-cover">
+                          <div class="Programer p-2 m-5">
 
+                        <div class="row">
+                          <div class="col-md-2 cover-section">
+                              <div class="colunm">
+                                  <h4 style="font-size: 20px; padding-right:10px;">PROGRAMMING</h4>
+                                  <P style="font-size:16px;!important">Loremipsum dolorsit
+                                     </P>
+                                    <h4 style="font-size:18px;" a href="#">LEARN MORE </h4>
+                                  </div>
+                          </div>
+                          <div class="col-md-2">
+                              <div class="colunm">
+                                  <h4 style="font-size: 20px; padding-right:40px;">PROGRAMMING</h4>
+                                  <P style="font-size:16px;!important">Loremipsum dolorsit 
+                                     </P>
+                                    
+                                  </div>
+                          </div>
+                          <div class="col-md-2">
+                              <div class="colunm">
+                                  <h4 style="font-size: 20px; padding-right:10px;">PROGRAMMING</h4>
+                                  <P style="font-size:16px;!important">Loremipsum dolorsit
+                                     </P>
+                                    
+                                  </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="colunm">
+                                    <h4 style="font-size: 20px; padding-right:10px;">PROGRAMMING</h4>
+                                    <P style="font-size:16px;!important">Loremipsum dolorsit
+                                      <br>
+                                       </P>
+                                    
+                                    </div>
+                              </div>
+                              <div class="col-md-2">
+                                  <div class="colunm">
+                                      <h4 style="font-size: 15px; padding-left:15px;">COORDINATION,<br>INSTALLATION $<br> SUERVISION</h4>
+                                   
+                                      
+                                      </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="colunm">
+                                        <h4 style="font-size: 20px; padding-left:40px;">DELIVERY</h4>
+                                        
+                                          
+                                        </div>
+                                  </div>
+                        </div>
+                          </div>			
                         </div>
                         <section class="inspiration mb-5">
                           <h2 class="mt-5">INSPIRATION</h2>
                           <div class="row">
-                              <div class="col-md-4">
+                              <div class="col-md-4"style="padding-left:80px;">
                                   <p>
                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d,
                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d
@@ -140,19 +213,20 @@ crossorigin="anonymous">
 
 
                                     <div class="row">
-                                      <div class="col-md-12 heroSlider-fixed">
+                                      <div class="col-md-12 heroSlider-fixed"style="padding-left:150px;">
                                         <div class="overlay">
                                       
                                          <!-- Slider -->
+                                         
                                         <div class="slider responsive">
-                                          <div class="column">
-                                            <img src="http://placehold.it/200x150" alt="" />
+                                          <div class="column"style="width:280px;">
+                                            <img src="assets/mag 1.jpg" class="img-class">
                                           </div>
-                                          <div class="column">
-                                            <img src="http://placehold.it/200x150" alt="" />
+                                          <div class="column" style="width:250px;">
+                                            <img src="assets/mag2.jpg" alt="" class="img-class"/>
                                           </div>
-                                          <div class="column">
-                                            <img src="http://placehold.it/200x150" alt="" />
+                                          <div class="column" style="width:250px;">
+                                            <img src="assets/mag3.jpg" alt="" class="img-class" />
                                           </div>
                                                                                                                           
                                           
@@ -178,3 +252,7 @@ crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
 </body>
 </html>
+
+
+
+

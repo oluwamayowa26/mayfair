@@ -1,17 +1,40 @@
-.banner { padding-left: 35rem;
-}
 
 .leftbox{
     height:450px;
-    background-color: #F1F1E5;
-    width:100%;
+    background-color:
   }
   .rightbox{
     height:420px;
     background-color: yellow;
     width:100%;
   }
+  .cover {    
+    object-fit: cover;    
+}
+
+.middle-cover{
+  background-image: url('./assets/Group\ 2.svg');
+  background-size: 100%;
+  /* opacity: 0.4;
+  filter: alpha(opacity=40); */
+color:#fff;
+height: 600px;
+}
+
+.middle-cover .col-md-2{
   
+  height: 100%;
+  margin-top: 200px;  
+  
+ justify-content: left;
+ font-size: 20px;
+}
+/* .middle-cover content{
+
+} */
+ 
+
+
   has-overlay::after {
       content: "";
       display: block;
@@ -29,11 +52,6 @@
     height: 55px;
 
   }
-  .planning{
-    padding-bottom: 90px;
-   padding-left:60px;
-  
-  }
   #overlay {
     position: absolute; /* Sit on top of the page content */
      /* Hidden by default */
@@ -49,7 +67,7 @@
       padding-top:50px;
     }
 
-    img {
+    .img-class {
       width: 100%;
       height: auto;
       padding: 5px;
@@ -73,16 +91,7 @@
             background-color:black;
           }
         }
-        button {
-          font: 0/0 a;
-          text-shadow: none;
-          color: transparent;
-          background-color:#999;
-          border:none;
-          width: 15px;
-          height: 15px;
-          border-radius:50%;
-        }
+        
         :hover{
           background-color: black;
         }
@@ -121,23 +130,19 @@
     
     
     
-    .one{
-      
-      width:300px;
-     height: 200px;
-      margin-top: 0px
+    .one{ padding-left: 70px;
+     
      
     }
 
     .two{
-      width:300px;
-      height:200x;
-      margin-top: 20px;
-      
-      
+      padding-right: 70px;
     }
+      
+      
+    
     #box-container{
-      display:flex;
+      
       justify-content: center;
       margin-top: 20px;
       
@@ -153,8 +158,19 @@
     
     .project{
       background-color: #FFFBF2;
-      margin-top: 30px;
+      
     }
+    .clip {
+      background: url("assets/M.jpg");
+      position:absolute;
+      background-repeat: no-repeat;
+      background-size: 1000px 1000px;
+      padding-left: 140px;
+      padding-top: 50px;
+      border:none;
+      clip: rect(100px,275px,198px,142px);
+      left:-60px;
+  }
     .btn{color: black;
       outline-color: yellow;
      align-content: center;
@@ -178,37 +194,7 @@
      position: left;
      margin-top: 100px;
   }
-.h3-span{color:blue;
+
 
 }
 /* parralelogram */
-
-.parallelogram {
-  $plgm-height: 215px; // From design
-  $slant-width: 109px; // Figured out with trigonometry
-  $slant-height: 250px; // Figured out with trigonometry
-  
-  position: relative;
-  width: 305px; // Usually would be a % based on grid
-  height: $plgm-height;
-  margin: 0 auto;
-  background: blue;
-  
-  &:before, &:after {
-    @include transform(rotate(-30deg));
-    width: $slant-width;
-    height: $slant-height;
-    background: blue;
-    content: '';
-  }
-  
-  &:before {
-    @include position(absolute, null null 0 0);
-    @include transform-origin(left bottom);
-  }
-  
-  &:after {
-    @include position(absolute, 0 0 null null);
-    @include transform-origin(right top);
-  }
-
